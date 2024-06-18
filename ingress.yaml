@@ -1,0 +1,15 @@
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: targabay-webapp-ingress
+  namespace: targabay
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: Host(`dev.targabay.com`)
+      services:
+        - kind: Service
+          name: webapp
+          port: 3000
