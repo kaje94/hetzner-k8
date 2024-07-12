@@ -8,7 +8,7 @@ spec:
     - web
   routes:
     - kind: Rule
-      match: Host(`dev.targabay.com`)
+      match: Host(`targabay.com`)
       services:
         - kind: Service
           name: webapp
