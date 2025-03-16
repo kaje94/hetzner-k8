@@ -13,16 +13,6 @@ spec:
         - kind: Service
           name: webapp
           port: 3000
----
-apiVersion: traefik.io/v1alpha1
-kind: IngressRoute
-metadata:
-  name: sleklink-webapp-ingress
-  namespace: sleklink
-spec:
-  entryPoints:
-    - web
-  routes:
     - kind: Rule
       match: Host(`slek.link`)
       services:
