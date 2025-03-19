@@ -149,7 +149,8 @@ Add Premetheus as data source for Grafana
 
 ## Adding Persistent Volume and Persistent Volume claim
 
-To retain data across pod restarts or re-deployments, you need to use Persistent Volumes (PVs) and Persistent Volume Claims (PVCs). Otherwise, their data will be lost when the pods are restarted or rescheduled.
+> Following have not been verified
+> To retain data across pod restarts or re-deployments, you need to use Persistent Volumes (PVs) and Persistent Volume Claims (PVCs). Otherwise, their data will be lost when the pods are restarted or rescheduled.
 
 > Make sure to update the node names in /pv-config yamls
 
